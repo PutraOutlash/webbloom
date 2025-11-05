@@ -1,0 +1,84 @@
+/* File: ../css/download-style.css */
+
+/* Bagian Hero (atas) */
+.hero-download {
+    background-color: var(--section-bg);
+    /* Pakai variabel */
+    padding: 60px 0;
+}
+
+.hero-download .hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.hero-download .hero-text {
+    flex-basis: 50%;
+    /* Ambil 50% lebar */
+}
+
+.hero-download .hero-text h1 {
+    font-size: 3.5rem;
+    /* 56px */
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--text-color);
+    /* Pakai variabel */
+    margin-bottom: 30px;
+}
+
+.btn-download-main {
+    padding: 15px 35px;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--primary-color);
+    /* Pakai variabel */
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(255, 105, 180, 0.4);
+    /* Bayangan pink */
+}
+
+.hero-download .hero-image {
+    flex-basis: 45%;
+    /* Ambil 45% lebar */
+}
+
+.hero-download .hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Bagian Deskripsi (bawah) */
+.description-section {
+    padding: 80px 0;
+}
+
+.description-section .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* 2 kolom sama rata */
+    gap: 50px;
+    align-items: start;
+}
+
+.description-box.left h2 {
+    font-size: 1.75rem;
+    /* 28px */
+    font-weight: 600;
+    line-height: 1.5;
+    color: var(--text-color);
+    /* Pakai variabel */
+}
+
+.description-box.right p {
+    font-size: 1.1rem;
+    /* 18px */
+    line-height: 1.7;
+    color: var(--text-color-light);
+    /* Pakai variabel */
+}

@@ -1,0 +1,222 @@
+/* File: ../css/artikel-style.css (VERSI PERBAIKAN) */
+
+/* HAPUS 'body { ... }' dari sini. 
+  Biarkan file style.css yang mengaturnya.
+*/
+
+/* Header Halaman Artikel */
+.artikel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0 20px 0;
+}
+
+.artikel-header h1 {
+    font-size: 38px;
+    font-weight: 700;
+    flex-grow: 1;
+    text-align: center;
+    margin-left: -40px;
+    color: var(--text-color);
+    /* Gunakan variabel */
+}
+
+.menu-toggle {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text-color);
+    /* Gunakan variabel */
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--border-color);
+    /* Gunakan variabel */
+    border-radius: 25px;
+    background-color: var(--background-color);
+    /* Gunakan variabel */
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    width: 250px;
+    border-radius: 25px 0 0 25px;
+    background-color: transparent;
+    /* Transparan agar ikut bg parent */
+    color: var(--text-color);
+    /* Gunakan variabel */
+}
+
+.search-bar button {
+    background: none;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    color: var(--text-color-light);
+    /* Gunakan variabel */
+}
+
+/* Filter Kategori */
+.artikel-filter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.artikel-filter label {
+    font-weight: 600;
+}
+
+.custom-select {
+    border: 1px solid var(--border-color);
+    /* Gunakan variabel */
+    padding: 8px 15px;
+    border-radius: 20px;
+    background-color: var(--background-color);
+    /* Gunakan variabel */
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* Grid Layout Utama */
+.artikel-content-grid {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+/* Kartu Artikel */
+.article-card.large {
+    background: var(--section-bg);
+    /* Gunakan variabel, BUKAN white */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    /* Gunakan variabel */
+}
+
+.article-card.large img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.article-card-content {
+    padding: 25px;
+}
+
+.category-tag {
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 15px;
+    /* Gunakan variabel pink kita */
+    color: var(--primary-color);
+    background-color: var(--input-bg);
+    /* input-bg warnanya pink muda */
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.article-card-content h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 1.3;
+    color: var(--text-color);
+    /* Gunakan variabel */
+}
+
+.article-card-content p {
+    color: var(--text-color-light);
+    /* Gunakan variabel */
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.author-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: var(--text-color-light);
+    /* Gunakan variabel */
+}
+
+/* Sidebar */
+.sidebar {
+    position: sticky;
+    top: 20px;
+}
+
+.latest-articles-box {
+    border: 2px solid var(--border-color);
+    /* Gunakan variabel */
+    border-radius: 15px;
+    padding: 25px;
+    background-color: var(--section-bg);
+    /* Gunakan variabel, BUKAN white */
+}
+
+.latest-articles-box h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--border-color);
+    /* Gunakan variabel */
+    color: var(--text-color);
+    /* Gunakan variabel */
+}
+
+.latest-articles-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.latest-articles-box ul li {
+    margin-bottom: 25px;
+}
+
+.latest-articles-box ul li:last-child {
+    margin-bottom: 0;
+}
+
+.latest-articles-box ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    /* Gunakan variabel */
+    font-weight: 700;
+    line-height: 1.4;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.author-info.small {
+    font-size: 12px;
+}
+
+.btn-login {
+    width: 100%;
+    background-color: var(--primary-color);
+    /* Gunakan variabel */
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 30px;
+    box-shadow: 0 4px 10px rgba(236, 72, 153, 0.3);
+}
